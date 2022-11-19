@@ -47,10 +47,18 @@ const UnorderedList = styled.ul`
 `;
 
 const ContactDiv = styled.div`
-  width: clamp(5rem, 15vw, 9rem);
+  width: clamp(7rem, 15vw, 9rem);
   height: 60%;
   background-color: red;
   border-radius: 5px;
   margin-right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & p{
+    height: auto;
+    color: white;
+    font-size: clamp(0.3rem, 2.7vw, 1rem);
+  }
 `;
 export { NavStyle, HamburgerDiv, ContactDiv, UnorderedList };
