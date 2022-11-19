@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
   font-size: 100%;
   background: transparent;
   box-sizing: border-box;
-  overflow: hidden;
  }
+
  .active{
   outline: 1px white solid;
   outline-offset: -1px;
@@ -23,9 +23,8 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const MainDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 300vh;
-  overflow: hidden;
 `;
 
 export { GlobalStyles, MainDiv };

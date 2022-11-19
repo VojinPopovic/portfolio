@@ -1,43 +1,46 @@
 import styled from "styled-components";
 
 const NavStyle = styled.div`
-  width: 98vw;
+  width: 99%;
   height: 50px;
   background-color: black;
-  margin-top: 1vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  border-radius: clamp(0.5rem, 1vw, 2rem);
+  border-radius: clamp(0.4rem, 1vw, 0.6rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: 0.4vw auto;
 `;
 
-
 const HamburgerDiv = styled.div`
-  width: 40%;
+  width: 20%;
   height: 100%;
 `;
 
 const UnorderedList = styled.ul`
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
- & li {
-  & a{
-    text-decoration: none;
-    color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  display: ${props => props.display};
+  & li {
+    list-style: none;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
   }
- }
-`
+`;
 
 const ContactDiv = styled.div`
-  width: 20%;
+  width: clamp(5rem, 15vw, 9rem);
   height: 60%;
   background-color: red;
   border-radius: 5px;
-  margin-right: 1%;
+  margin-right: 9px;
 `;
 export { NavStyle, HamburgerDiv, ContactDiv, UnorderedList };
