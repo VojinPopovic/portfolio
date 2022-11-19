@@ -5,7 +5,7 @@ import NavMobile from "./NavMobile";
 
 function Nav() {
   const [width, setWidth] = useState(window.innerWidth);
-  let breakpoint = 1000;
+  let breakpoint = 1200;
 
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);

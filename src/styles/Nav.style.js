@@ -17,6 +17,17 @@ const NavStyle = styled.div`
 const HamburgerDiv = styled.div`
   width: 20%;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+  & .hamburger {
+    width: auto;
+    height: 100%;
+  }
+  & .hamburger-close {
+    display: none;
+  }
 `;
 
 const UnorderedList = styled.ul`
@@ -25,8 +36,7 @@ const UnorderedList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 15%;
-  display: ${props => props.display};
+  display: ${(props) => props.display};
   & li {
     list-style: none;
     & a {
