@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
 const MainDiv = styled.div`
   width: 100%;
   height: 300vh;
+  position: relative;
 `;
 
 export { GlobalStyles, MainDiv };
