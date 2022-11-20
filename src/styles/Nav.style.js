@@ -15,12 +15,13 @@ const NavStyle = styled.div`
 `;
 
 const HamburgerDiv = styled.div`
-  width: 20%;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 3%;
+  z-index: 0;
   & .hamburger {
     width: auto;
     height: 100%;
@@ -30,14 +31,16 @@ const HamburgerDiv = styled.div`
   }
   & .ul-container {
     position: absolute;
-    margin-top: calc(0.4vw + 130px);
+    margin-top: calc(0.4vw + 235px);
     left: 0;
     right: 0;
     margin-inline: auto;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: black;
     display: ${(props) => props.display};
+    border-bottom-left-radius: clamp(0.4rem, 1vw, 0.6rem);
+    border-bottom-right-radius: clamp(0.4rem, 1vw, 0.6rem);
   }
 `;
 
@@ -45,16 +48,16 @@ const UnorderedList = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: ${props => props.justify};
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${props => props.fDirection};
   & li {
     list-style: none;
     & a {
       text-decoration: none;
       color: white;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 `;
@@ -68,6 +71,7 @@ const ContactDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 2;
   & p {
     height: 100%;
     display: flex;
