@@ -28,6 +28,17 @@ const HamburgerDiv = styled.div`
   & .hamburger-close {
     display: none;
   }
+  & .ul-container {
+    position: absolute;
+    margin-top: calc(0.4vw + 130px);
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: ${(props) => props.display};
+  }
 `;
 
 const UnorderedList = styled.ul`
@@ -36,12 +47,14 @@ const UnorderedList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: ${(props) => props.display};
+  display: flex;
+  flex-direction: column;
   & li {
     list-style: none;
     & a {
       text-decoration: none;
       color: white;
+      font-size: 0.9rem;
     }
   }
 `;
@@ -50,15 +63,17 @@ const ContactDiv = styled.div`
   width: clamp(7rem, 15vw, 9rem);
   height: 60%;
   background-color: red;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-right: 9px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  & p{
-    height: auto;
+  & p {
+    height: 100%;
+    display: flex;
+    align-items: center;
     color: white;
-    font-size: clamp(0.3rem, 2.7vw, 1rem);
+    font-size: clamp(0.3rem, 2.2vw, 0.9rem);
   }
 `;
 export { NavStyle, HamburgerDiv, ContactDiv, UnorderedList };

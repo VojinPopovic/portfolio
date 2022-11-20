@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   font-size: 100%;
   background: transparent;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
  }
 
  .active{

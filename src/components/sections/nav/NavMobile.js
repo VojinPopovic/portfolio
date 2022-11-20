@@ -36,17 +36,19 @@ function NavMobile(props) {
         {/* prettier-ignore */}
         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="white" strokeLinecap="round" strokeWidth="2"><path d="M5 5L12 5L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L12 5L19 5;M5 5L12 12L19 5"/></path><path d="M5 12H19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 12H19;M12 12H12"/></path><path d="M5 19L12 19L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L12 19L19 19;M5 19L12 12L19 19"/></path></g></svg>
       </div>
-      <UnorderedList display={displayHandler()} ref={ulRef}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">About me</a>
-        </li>
-        <li>
-          <a href="/">Portfolio</a>
-        </li>
-      </UnorderedList>
+      <div className="ul-container" display={displayHandler()} ref={ulRef}>
+        <UnorderedList>
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="/">ABOUT ME</a>
+          </li>
+          <li>
+            <a href="/">PORTFOLIO</a>
+          </li>
+        </UnorderedList>
+      </div>
     </HamburgerDiv>
   );
 }
