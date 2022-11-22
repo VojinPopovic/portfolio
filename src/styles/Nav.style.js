@@ -12,6 +12,7 @@ const NavStyle = styled.div`
   right: 0;
   left: 0;
   margin: 0.4vw auto;
+  z-index: 200;
 `;
 
 const HamburgerDiv = styled.div`
@@ -77,7 +78,8 @@ const ContactDiv = styled.div`
     display: flex;
     align-items: center;
     color: white;
-    font-size: clamp(0.3rem, 2.2vw, 0.9rem);
+    font-size: clamp(0.3rem, 2.2vw, 0.8rem);
+    font-weight: 700;
   }
 `;
 export { NavStyle, HamburgerDiv, ContactDiv, UnorderedList };
