@@ -1,13 +1,13 @@
 import { MainSectionDiv } from "../../../styles/MainSection.style";
 import { CardStyle } from "../../../styles/Card.style";
-import cardImage from "./cardImage.png";
+import cardImage from "../../../assets/cardImage.png"
 import BlackBlobVojin from "../../../assets/BlackBlobVojin.svg";
 
 function MainSection() {
   return (
     <MainSectionDiv>
       <div className="card-container">
-        <CardStyle>
+        <CardStyle right="-20%">
           <div className="image-container">
             <img src={cardImage} alt="" />
             <div className="me-container">
@@ -31,7 +31,7 @@ function MainSection() {
             </p>
           </div>
         </CardStyle>
-        <CardStyle mTop="40px">
+        <CardStyle mTop="40px" left="-20%">
           <div className="card-text-container">
             <p className="card-title">
               Always interested in

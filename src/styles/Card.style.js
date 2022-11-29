@@ -19,10 +19,10 @@ const CardStyle = styled.div`
   }
   & .card-text-container {
     width: 90%;
-    height: 80%;
+    height: auto;
   }
   & .card-title {
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.3rem);
     margin-bottom: 10px;
     & span {
       color: #da3636;
@@ -33,7 +33,7 @@ const CardStyle = styled.div`
     line-height: 30px;
   }
   & .paragraph {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.5rem, 2.8vw, 0.92rem);
     font-weight: 300;
     letter-spacing: 0em;
   }
@@ -50,7 +50,7 @@ const CardStyle = styled.div`
     width: auto;
     position: absolute;
     top: -63%;
-    font-size: clamp(3rem, 4vw, 5rem);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 800;
     letter-spacing: -0.05em;
     display: flex;
@@ -62,10 +62,18 @@ const CardStyle = styled.div`
       color: #da3636;
     }
     & img {
-      width: 60%;
+      width: 50%;
       position: absolute;
-      right: -55px;
+      right: -40px;
       z-index: -1;
+    }
+  }
+  @media (min-width: 1000px) {
+    left: ${(props) => props.left};
+    right: ${(props) => props.right};
+    & .me-container{
+      left: -120%;
+      top: 30%;
     }
   }
 `;
