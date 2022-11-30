@@ -16,7 +16,7 @@ const NavStyle = styled.div`
 `;
 
 const HamburgerDiv = styled.div`
-  width: 25%;
+  width: 300px;
   height: 100%;
   display: flex;
   justify-content: flex-start;

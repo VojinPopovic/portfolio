@@ -68,11 +68,11 @@ const CardStyle = styled.div`
       z-index: -1;
     }
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     left: ${(props) => props.left};
     right: ${(props) => props.right};
     & .me-container{
-      left: -120%;
+      left: -127%;
       top: 30%;
     }
   }
