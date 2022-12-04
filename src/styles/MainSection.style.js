@@ -17,13 +17,13 @@ const MainSectionDiv = styled.div`
   }
   @media screen and (min-width: 800px) and (max-width: 1000px) {
     & .card-container {
-      margin-top: 65vh;
+      margin-top: 80vh;
     }
   }
   @media (min-width: 1200px) {
     & .card-container {
       max-width: 1200px;
-      margin-top: 600px;
+      margin-top: 500px;
     }
   }
   @media (max-height: 700px) {

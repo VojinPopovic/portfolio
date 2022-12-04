@@ -1,7 +1,9 @@
 import { MainSectionDiv } from "../../../styles/MainSection.style";
 import { CardStyle } from "../../../styles/Card.style";
-import cardImage from "../../../assets/cardImage.png"
+import cardImage from "../../../assets/cardImage.png";
 import BlackBlobVojin from "../../../assets/BlackBlobVojin.svg";
+import RedBlobCardImage from "../../../assets/RedBlobCardImage.svg";
+import RedBlobAboutCard from "../../../assets/RedBlobAboutCard.svg";
 
 function MainSection() {
   return (
@@ -9,7 +11,8 @@ function MainSection() {
       <div className="card-container">
         <CardStyle right="-20%">
           <div className="image-container">
-            <img src={cardImage} alt="" />
+            <img src={cardImage} alt="" className="card-image" />
+            <img src={RedBlobCardImage} alt="" className="red-blob-card-image background-blob" />
             <div className="me-container">
               <p className="me-paragraph">Hi, i'm</p>
               <span> Vojin</span>
@@ -32,6 +35,7 @@ function MainSection() {
           </div>
         </CardStyle>
         <CardStyle mTop="40px" left="-20%">
+          <img src={RedBlobAboutCard} alt="" className="red-blob-about-card background-blob" />
           <div className="card-text-container">
             <p className="card-title">
               Always interested in

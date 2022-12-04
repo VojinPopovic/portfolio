@@ -11,9 +11,6 @@ const CardStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  & img {
-    width: 75%;
-  }
   & p {
     color: white;
   }
@@ -43,15 +40,15 @@ const CardStyle = styled.div`
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -140%;
+    top: -135%;
     transform: translateZ(-10px);
   }
   & .me-container {
     width: auto;
     position: absolute;
     top: -63%;
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 800;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    font-weight: 700;
     letter-spacing: -0.05em;
     display: flex;
     & .me-paragraph {
@@ -68,10 +65,28 @@ const CardStyle = styled.div`
       z-index: -1;
     }
   }
+  & .background-blob{
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+  }
+  & .card-image {
+    width: 70%;
+  }
+  & .red-blob-card-image {
+    right: -15%;
+    bottom: -10%;
+  }
+  & .red-blob-about-card{
+    width: 45%;
+    top: -30%;
+    left: -15%;
+    transform: translateZ(-10px);
+  }
   @media (min-width: 1200px) {
     left: ${(props) => props.left};
     right: ${(props) => props.right};
-    & .me-container{
+    & .me-container {
       left: -127%;
       top: 30%;
     }
