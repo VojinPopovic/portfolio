@@ -11,28 +11,24 @@ const CardStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  & p {
-    color: white;
-  }
   & .card-text-container {
     width: 90%;
     height: auto;
+    color: white;
   }
   & .card-title {
     font-size: clamp(1.8rem, 4vw, 2.3rem);
     margin-bottom: 10px;
+    letter-spacing: -0.05em;
+    line-height: 30px;
     & span {
       color: #da3636;
       font-weight: 800;
-      letter-spacing: -0.05em;
     }
-    letter-spacing: -0.05em;
-    line-height: 30px;
   }
   & .paragraph {
     font-size: clamp(0.5rem, 2.8vw, 0.92rem);
     font-weight: 300;
-    letter-spacing: 0em;
   }
   & .image-container {
     width: auto;
@@ -65,7 +61,7 @@ const CardStyle = styled.div`
       z-index: -1;
     }
   }
-  & .background-blob{
+  & .background-blob {
     position: absolute;
     width: 60%;
     z-index: -1;
@@ -77,7 +73,7 @@ const CardStyle = styled.div`
     right: -15%;
     bottom: -10%;
   }
-  & .red-blob-about-card{
+  & .red-blob-about-card {
     width: 45%;
     top: -30%;
     left: -15%;
