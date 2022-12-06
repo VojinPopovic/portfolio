@@ -6,6 +6,7 @@ const MainSectionDiv = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
   & .card-container {
     width: 95%;
     height: auto;

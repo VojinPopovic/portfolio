@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavStyle = styled.div`
-  width: 99%;
+  width: 99.5%;
   height: 50px;
   background-color: black;
   border-radius: clamp(0.4rem, 1vw, 0.6rem);
@@ -11,12 +11,12 @@ const NavStyle = styled.div`
   position: fixed;
   right: 0;
   left: 0;
-  margin: 0.4vw auto;
+  margin: 0.2vw auto;
   z-index: 200;
 `;
 
 const HamburgerDiv = styled.div`
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -49,10 +49,10 @@ const UnorderedList = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: ${props => props.justify};
+  justify-content: ${(props) => props.justify};
   align-items: center;
   display: flex;
-  flex-direction: ${props => props.fDirection};
+  flex-direction: ${(props) => props.fDirection};
   & li {
     list-style: none;
     & a {
@@ -64,22 +64,27 @@ const UnorderedList = styled.ul`
 `;
 
 const ContactDiv = styled.div`
-  width: clamp(7rem, 15vw, 9rem);
-  height: 60%;
+  width: clamp(5rem, 20vw, 7rem);
+  height: 70%;
   background-color: red;
   border-radius: 8px;
   margin-right: 9px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   z-index: 2;
   & p {
     height: 100%;
     display: flex;
     align-items: center;
     color: white;
-    font-size: clamp(0.3rem, 2.2vw, 0.8rem);
+    font-size: clamp(0.55rem, 1.9vw, 0.7rem);
     font-weight: 700;
+    margin-left: 5%;
+  }
+  & svg{
+    width: clamp(1.1rem, 3vw, 1.4rem);
+
   }
 `;
 export { NavStyle, HamburgerDiv, ContactDiv, UnorderedList };
