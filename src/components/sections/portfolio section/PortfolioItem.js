@@ -1,13 +1,10 @@
 import { PortflolioItemStyle } from "../../../styles/PortfolioSection.style";
 
-function PortfolioItem() {
+function PortfolioItem(props) {
   return (
     <PortflolioItemStyle>
       <div className="screen"></div>
-      <div className="portfolio-item-description">
-        <p className="title"></p>
-        <p className="description"></p>
-      </div>
+      <div className="portfolio-item-description">{props.children}</div>
     </PortflolioItemStyle>
   );
 }
